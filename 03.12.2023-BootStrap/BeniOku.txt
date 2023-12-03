@@ -1,0 +1,3 @@
+Merhaba arkadaşlar Bu hafta derste işlemiş olduğunuz kodlarrı buraya eklemenizi istiyoruz. 
+Herkes sınıf numarası ve isim ile bir klasör oluştursun. 
+Daha sonra yazmış olduğunuzu kodları mentor arkadaşlara onaya gönderiniz.

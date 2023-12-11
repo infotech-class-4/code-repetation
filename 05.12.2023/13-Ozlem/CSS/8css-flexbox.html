@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+.kutular{
+    
+    width: 800px;
+    height: 600px;
+    background-color: salmon;
+
+    display: flex;
+    /* default u flex-start */
+
+    /* justify-content: flex-start;
+    justify-content: flex-end; */
+    
+    /* justify-content: space-around; */
+/*     
+    justify-content: space-evenly; */
+    /* evenly de heryer bas son aralar ayni oranda dagitilir */
+    /* justify-content: space-between; */
+justify-content: center;
+
+
+
+    /* align-items: flex-start;
+    align-items: flex-end; */
+    align-items: center;
+
+    
+    /* align-items: baseline; */
+
+
+    /* flex-direction i column a cevirirsek justify-content ile align-items da rollerini degistirir */
+
+     /* flex-direction: row; */
+    /*flex-direction: row-reverse; */
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+
+
+/* flex wrap ile sigmayani alta dusur deriz.burda column seklinde dizildiler fakat height lari 100px olmasina ragmen kendilerini sigdirmak icin kuculttuler.bunun olmasini istemiyorsak flex-flow: column wrap deriz.sigmayan yan tarafa aksin */
+    flex-flow: column wrap;
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    align-content: flex-end;
+    align-content: center;
+
+     /*align-content; bunu kullanabilmek icin wrap özelliginin olmasi lazim.eger tasan bisey yoksa tek sira ise align-item, eger sigmayip tasan varsa align-content kullanilir.verileck ozelikler ayni. flex-start, flex-end....*/
+
+    /* align-content: space-between; */
+    /* align-content: space-around;*/
+    align-content: space-evenly; 
+
+
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: slateblue;
+    border-radius: 10px;
+    margin: 10px;
+
+    /* box icindeki yazilar icin ise; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+
+    /* divin icindeki butun etiketleri degilde sadece birini degistirmek istersek align-self deriz.hepsi icin ise align-items deriz.parent divde flex-direction i column yapincaasagidaki flex-end tersine cervrilip basa aldi */
+
+    align-self:flex-end;
+    height: 100px; 
+    background-color: springgreen;
+
+    
+}
+/* order ne kadar kucukse basa dogru, ne kadar buyukse sona dogru atar div leri. */
+.box2{
+background-color: teal;
+order: -1;
+/* basa geciriir */
+order: 4;
+/* sona dogru goturur */
+}
+
+
+
+
+
+
+
+/* strech ile eger div e bir yukseklik vermezsek  uzatir.align-items ile butun elementleri uzatiriz ama bunun icin parent div e veririz.align-self ile ise direkt uzatmak istedigimize veririz */
+   
+.yandiv{
+    background-color: aquamarine;
+    height: 300px;
+    margin-top: 50px;
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.boxx{
+    width: 100px;
+    background-color: brown;
+  border-radius: 5px;
+  
+  /* align-self: stretch; */
+
+  /* yazilar icin ise; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.sondiv{
+     background-color: rgb(221, 255, 127);
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxs{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(230, 136, 92);
+ margin-right: 1rem;
+  border-radius: 5px;
+   /* yazilar icin ise; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+    
+}
+
+/*  flex-grow;kutularin kaplayacagi alani belirtiriz.sen 3 birim kapla digerleri de esit bir sekilde kalan alani kaplasin gibi 
+flex-shrink; kutularin ne kadar kuculup kaplayacagi alani belirleriz.grow un tersi*/
+.box11{
+    flex-grow: 2;
+}
+.box12{
+    flex-grow: 4;
+}
+.box13{
+    flex-shrink: 3;
+}
+
+.box14{
+    flex-shrink: 5;
+}
+    </style>
+</head>
+
+
+
+<body>
+    
+<div class="kutular">
+<div class="box box1">1.Box</div>
+<div class="box box2">2.Box</div>
+<div class="box box3">3.Box</div>
+<div class="box box4">4.Box</div>
+<div class="box box5">5.Box</div>
+<div class="box">6.Box</div>
+<div class="box">7.Box</div>
+<div class="box">8.Box</div>
+
+</div>
+
+
+<div class="yandiv">
+    <div class="boxx">9.div</div>
+    <div class="boxx">10.div</div>
+</div>
+
+<div class="sondiv">
+    <div class="boxs box11">11.div</div>
+    <div class="boxs box12">12.div</div>
+    <div class="boxs box13">13.div</div>
+    <div class="boxs box14">14.div</div>
+</div>
+
+</body>
+</html>

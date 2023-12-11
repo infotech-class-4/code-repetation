@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- internal css de head etiketi arasina yazilir -->
+    <!-- external css de de color verdik ama internal css de verdigimiz daha oncelikli ayni ozellikteki cagrilmada -->
+    <!-- eger inline varsa o da daha oncelikli. -->
+    <!-- inline-internal-external seklinde dir ayni sartlarda siralama.fakat internal ve external da eger daha detayli anlatim varsa o zaman hangisi daha detayli tarif edildi ise o onceliklidir -->
+    <!-- id ile ulasirsak o da genel secicilerden ustundur.sonra class ile ulasilan, en son genel seciciler gelir -->
+
+
+
+    <!-- bilgisayar code lari yukaridan asagi okudugu icin ayni elemente en son verdigin kod gecerli -->
+
+    <!-- evrensel secici * dir -->
+    <style>
+        h1 {
+            color: red;
+        }
+
+        p {
+            color: rgb(235, 18, 199);
+        }
+
+        #test {
+            color: blue;
+        }
+
+        .test1 {
+            color: aquamarine;
+        }
+
+
+
+        .color-red {
+            color: red;
+        }
+
+        .test2 {
+            color: rgb(43, 247, 16);
+        }
+
+
+        /* <!-- eger ayni elemente birden fazla class yazip sonra uc class icin de css yazarsak en sondakini alir ama ortadakinin styli ni alsin istersek ezmek icin !important diyebilirz onun yanina --> */
+
+        .test3 {
+            color: red;
+        }
+
+        .color1 {
+            color: hotpink !important;
+        }
+
+        .color2 {
+            color: green;
+        }
+
+        /* ***************************************** */
+        p.color-gri {
+            color: rgb(255, 153, 0) !important;
+        }
+
+        /* ********************************* */
+        p.test2.color-red {
+            color: blueviolet;
+        }
+
+
+        /* external css de daha detayli tarif yapildigi icin(oraya bak) onu alir, asagidaki internali almaz */
+        p.color-gri {
+            color: rgb(94, 255, 0);
+        }
+
+        /* ayni anda iki farkli elemente ayni css i de verebiliriz */
+
+        p.test5,
+        div.box5 {
+            color: aquamarine;
+        }
+
+        /* *************************** */
+        /* divin altinda bir ul onun altinda da ul varsa ; eger iki ul yi de secsin dersek div ul{} yapariz. Butun alttaki ul leri secer.
+eger sadece kendi cocuk etiketleri ul yi secsin dersek div>ul{ } deriz
+eger div in baska kardes(ayni hizada)  ul sini de secsin ayni style i versin istersek div + ul{} demeliiyz*/
+
+        div ul {
+            color: brown;
+        }
+
+        div>ul {
+            color: chartreuse;
+        }
+
+        div+ul {
+            color: crimson;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>h3 etiketi</h1>
+
+    <p id="test">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="test1">Lorem ipsum dolor sit amet.</p>
+    <p class>Lorem ipsum dolor sit amet.</p>
+
+    <hr>
+
+    <div class="box color-red">div etiketi</div>
+    <div class="box">div etiketi</div>
+    <p class="test2 color-red">paragraf etiketi</p>
+    <p class="test2">paragraf etiketi</p>
+
+    <hr>
+
+    <p class="test3 color-red color-gri">Lorem ipsum dolor sit amet.</p>
+
+    <p class="test4 color1 color2">!Important ile ezilenim</p>
+
+    <hr>
+    <hr>
+    <p class="test5">ayni css</p>
+    <div class="box5">
+        <h2>ayni css</h2>
+    </div>
+
+
+    <hr>
+    <hr>
+    <div class="box">
+        <ul>
+            <li>
+                ilk deger
+            </li>
+            <li>ikinci deger</li>
+
+            <ul>
+                <li>ucuncu deger</li>
+            </ul>
+
+        </ul>
+        <ul>
+            <li>dorduncu deger</li>
+        </ul>
+    </div>
+
+    <ul>
+        div in kardes degeri
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

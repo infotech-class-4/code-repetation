@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- LISTELER -->
+
+
+
+    <!-- DUZENSIZ LISTELER;  type na hicbirsey yazmazsan default degeri disc yani ici dolu yuvarlaktir.
+type i square veya circle da olabilir -->
+
+    <h1>UNORDERED LIST</h1>
+
+    <ul type="square">
+        <li>ay</li>
+        <li>by</li>
+        <li>cy</li>
+
+    </ul>
+
+    <ul type="circle">
+        <li>ay</li>
+        <li>by</li>
+        <li>cy</li>
+
+    </ul>
+
+    <!-- disc yazmasanda aynisini verir -->
+    <ul type="disc">
+        <li>ay</li>
+        <li>by</li>
+        <li>cy</li>
+
+    </ul>
+
+    <ol type="I">
+        <li>st</li>
+        <li>kt</li>
+        <li>bt</li>
+        <li>tt</li>
+    </ol>
+
+
+
+    <!-- DUZENLI LISTELER;  default u number olarak gelir.ama type na rakam, A, a, i, I yazablrsn. -->
+
+    <h1>ORDERED LIST</h1>
+    <ol type="1">
+        <li>st</li>
+        <li>kt</li>
+
+    </ol>
+
+    <ol type="A">
+        <li>st</li>
+        <li>kt</li>
+
+    </ol>
+
+    <ol type="a" start="3">
+        <li>st</li>
+        <li>kt</li>
+        <li>bt</li>
+        <li>tt</li>
+    </ol>
+
+    <ol type="1" start="3">
+        <li>st</li>
+        <li>kt</li>
+        <li>bt</li>
+        <li>tt</li>
+    </ol>
+
+    <ol type="i" start="4">
+        <li>st</li>
+        <li>kt</li>
+        <li>bt</li>
+        <li>tt</li>
+    </ol>
+
+    <ol type="I">
+        <li>st</li>
+        <li>kt</li>
+        <li>bt</li>
+        <li>tt</li>
+    </ol>
+
+
+    <h1>IC ICE LISTELER</h1>
+    <!--  type ni A yapip start ina 3 dersek C den baslar -->
+    <!-- li lerin icinde ol ler veya ul ler de olur -->
+
+    <ol type="1">
+
+        <li>
+
+            <ol type="A">
+                <li>st</li>
+                <li>ht</li>
+                <li>kt</li>
+                <li>bt</li>
+            </ol>
+
+        </li>
+
+        <br />
+
+        <li>
+            <ul>
+                <li>tt</li>
+                <li>ksp</li>
+            </ul>
+        </li>
+
+        <br />
+
+        <li>
+            <ol type="a" start="4">
+                <li>gg</li>
+                <li>hh</li>
+                <li>jj</li>
+
+            </ol>
+
+        </li>
+        <br>
+        <li>
+            <ul type="square">
+                <li>klnm</li>
+                <li>dfdg</li>
+            </ul>
+
+        </li>
+
+    </ol>
+
+<hr><br><br><br>
+
+    <!-- TABLE  -->
+    <table border="4" width="70%">
+        <thead>
+            <tr>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>Adress</th>
+                <th>Stadt</th>
+            </tr>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Özlem</td>
+                <td>Akc</td>
+                <td colspan="3">Art Straße</td>
+
+            </tr>
+            <td>Ayse</td>
+            <td rowspan="3">Celik</td>
+
+            <td>frg Straße</td>
+            <td>Köln</td>
+            <tr>
+
+            </tr>
+            <td>Fatma</td>
+
+
+            <td>hfgt Str</td>
+            <td>Berlin</td>
+            <tr>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>SUB VE SUP</h2>
+
+    10 <sup>2</sup>
+<br>
+    20 <sub>3</sub>
+
+</body>
+
+</html>

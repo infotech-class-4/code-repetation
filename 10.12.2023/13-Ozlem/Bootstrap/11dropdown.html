@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- bootstrap sitesinden linkini getirdik. asagiya da js kodunu getiriyoruz -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+
+
+<body class="w-75 mx-auto my-5">
+
+    <!-- kapsayici div olustur ve class ina dropdown diyoruz.icine bir button  ve birde acilir menu icin yine bir kapsayici div ki classi dropdown-menu olacak.onun altina da dropdown-item li a taglari ekliyoruz. en onemli kisim ise buton ve menuyu iliskjilendirme.bunun icin;buttona data-bs-toggle="kapsayicinin class ismi dropdown yaz" -->
+
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">dropdown butonu</button>
+    
+    <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">videolar</a>
+        <a href="#" class="dropdown-item">resimler</a>
+        <a href="#" class="dropdown-item">müzikler</a>
+        <!-- classi dropdown-divider olan bir div acarsak, bu altindaki a yi ayri bir alana alir menu acilinca -->
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">kisa videolar</a>
+
+    </div>
+</div>
+
+
+<br><br>
+<!--dropdown-header, active, disable  -->
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">dropdown butonu</button>
+
+    <div class="dropdown-menu">
+        <!-- active ilke mavi renk, disabled ile silik goruntu passiv hal olustururz -->
+        <a href="#" class="dropdown-item active">videolar</a>
+        <a href="#" class="dropdown-item">resimler</a>
+        <a href="#" class="dropdown-item disabled">müzikler</a>
+        <!-- classi dropdown-header olan bir div acarsak, bu altindaki a nin ustune o divin icine ne yaziyorsan onu gosterir menu acilinca -->
+        <div class="dropdown-header">baslik</div>
+        <a href="#" class="dropdown-item">kisa videolar</a>
+
+    </div>
+</div>
+
+
+
+<br><br>
+
+<!-- dropdown dropend class i ile acilma okunu asagidan sag yana degistirme. dropdown dropstart ile sol yana cevirme.tabi bunun icin solda ve sagda yer olmasi lazim -->
+
+<!-- <div class="dropdown dropend"> -->
+<div class="dropdown dropstart">
+    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">dropdown butonu</button>
+
+<div class="dropdown-menu">
+    <a href="#" class="dropdown-item">videolar</a>
+    <a href="#" class="dropdown-item">resimler</a>
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sample Pace 11</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        nav{
+            background-color: blue;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        nav ul li{
+            padding: 10px 20px;
+        } 
+        nav ul li a{
+            text-decoration: none;
+            font-size: 18px;
+            color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav ul li:hover{
+            background-color: chocolate;
+            border-radius: 10px;
+            transition: .5s;
+        }
+        @media screen and (max-width:768px) {
+            nav ul{
+                height: 250px;
+                flex-direction: column;
+                background-color: blue;
+                align-items: center;
+            }
+        nav ul li:nth-child(1) {
+            display: block;
+        }
+        nav ul li:nth-child(2) {
+            display: none;
+        }
+        #icon{
+            display: block;
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href=""> <i id="icon" class="fa-solid fa-house"></i></a></li>
+            <li><a href="">Homepace</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Videos</a></li>
+            <li><a href="">Pictures</a></li>
+            <li><a href="">Comments</a></li>
+            
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        a:hover {
+            background-color: chocolate;
+            font-size: 20px;
+            color: cyan;
+
+        }
+
+        button:hover {
+            background-color: darkmagenta;
+            border-radius: 8px;
+            /* opacity: 0.2; */
+            /* 1e ne kadar yaklasirsa o kadar koyu olur. 1 den uzaklastikca rengi soluklasir */
+            opacity: 0.8;
+        }
+
+
+
+        /* eger once butonu gizleyip sonra type i checkbox olan input checked yapildiktan sonra button gozuksun ve oyle gondereyim istersen; input[type="checkbox"]dedikten sonra :checked + #btn2{display:block} deriz.kodu yazarken siralama onemli yalniz.css de checked + #btn2 dedik yani checked edildikten sonra button... o yuzden kodu yazarkende once input sonra button gelmeli.ustte buton olmuyor.arada br olmuyor */
+        #btn2 {
+            display: none;
+        }
+
+       input[ type="checkbox" ]:checked + #btn2 {
+            display: block;
+        }
+
+        /*  hem block element gibi yukseklik verebileyim hem de inline gibi davranip curmu kadar yer kapsasin bos yere butun satiri kapsamasin diye inline-block verilir displaye*/
+        span {
+            display: inline-block;
+            background-color: darkmagenta;
+            height: 50px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="">google</a>
+    <br><br>
+    <button>Gonder</button>
+    <br><br>
+
+    <input type="checkbox">kabul ediyorum
+ 
+    <button id="btn2">GONDER</button>
+
+    <hr>
+    <div>div etiketi</div>
+    <span>span etiketi</span>
+
+</body>
+
+</html>

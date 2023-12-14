@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<label for="">Stadt wählen</label>
+<!-- eger select alaninin ustunde seciniz yazsin istersek orteyea onu yazraiz.bos olsun istersek bos bir option birakiriz -->
+
+    <select name="Stadt" id="">
+
+        <!-- <option value="">Stadt wählen</option> -->
+
+       <!-- option icine disabled dersek onu secenekler altinda silik gosterir ve secilemez yapar -->
+        <option value=""></option>
+
+        <option value="Berlin" disabled>Berlin</option>
+        <option value="Köln">Köln</option>
+        <option value="Dortmund">Dortmund</option>
+        <option value="Hannover">Hannover</option>
+
+        <input type="number" value="100">
+    </select>
+
+    <p>Kommentar hinzufügen</p>
+    <textarea name="" id="" cols="40" rows="10"></textarea>
+
+
+    <!-- kullanici inputa sehiri girmneye baslayacak ve bizim datalist icine yazdigimiz onerilerimizin gelmesi icin kullnairiz.datalistin id si ile inputa bir list ozelligi verirsek ve ikisi ayni olursa bunu saglamis oluruz -->
+    <datalist id="sehirler">
+        <option value="istanbul"></option>
+        <option value="ankara"></option>
+        <option value="bursa"></option>
+        <option value="antalya"></option>
+        <option value="izmir"></option>
+    </datalist>
+    <input type="text" id="stadt" list="sehirler">
+
+</body>
+</html>

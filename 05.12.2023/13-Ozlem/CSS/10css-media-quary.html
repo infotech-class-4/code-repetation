@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-color: blueviolet;
+}
+nav{
+    background-color: chartreuse;
+}
+nav ul{
+display: flex;
+justify-content: space-between;
+padding: 10px;
+}
+nav ul li{
+    padding: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color:rgb(146, 148, 11);
+
+    &:hover{
+        background-color: cyan;
+        border-radius: 8px;
+        transition: .5s;
+        /* transition: 0.5s veya .5s seklinde yazilabilir */
+    }
+
+}
+/* ya da bunu su sekilde de yazabilirsin; */
+
+/* nav ul li a:hover{
+ background-color: cyan;
+        border-radius: 8px;
+        transition: .5s;
+} */
+
+.fa-solid{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    nav ul{
+        height:250px;
+        flex-direction: column;
+        background-color: rgb(139, 0, 97);
+        align-items: center;
+    }
+
+
+    nav ul li :nth-child(6){
+        display: none;
+    }
+    /* display:none ile gizleyip, display:block ile de gprunur yapariz */
+   #anas{
+        display: none;
+        
+    }
+    .fa-solid{
+        display: block;
+    }
+
+}
+
+
+    </style>
+
+
+</head>
+<body>
+    
+<nav>
+    <ul>
+        <li ><a href=""id="anas">Anasayfa</a><i class="fa-solid fa-house"></i></li>
+        <li><a href="">Hakkimizda</a></li>
+        <li><a href="">Iletisim</a></li>
+        <li><a href="">Videolar</a></li>
+        <li><a href="">Resimler</a></li>
+        <li><a href="">Yorumlar</a></li>
+     
+    </ul>
+</nav>
+
+
+
+</body>
+</html>

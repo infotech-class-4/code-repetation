@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- bootstrap sitesinden linkini getirdik. asagiya da js kodunu getiriyoruz -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+        <style>
+
+        </style>
+</head>
+
+<!-- collapse; bir web sitesinde icerigi gizler veya goruntulemek icin kullanilir.biseye tikliyorsunuz ve acilir pencere cikiyor altinda.accordion sadece bir bolumu gostermek icin kullanlr -->
+
+<body class="w-75 mx-auto my-5">
+
+<!-- p icine yazarsan otomatik bosluk verir sagdan soldan -->
+ <!-- collapse -->   
+ 
+ <p>
+  <button class="btn btn-primary" data-bs-target="#content" data-bs-toggle="collapse">
+KAYDET
+  </button>
+
+  <!-- button ile bu divi iliskilendirmek icin id verelim ve buttona da data-bs-target ile verelim. data-bs-toggle="colapse ile de acilir kapanir ozelligi verelim" -->
+
+  <!-- ayni seyi buttona degilde bir linke vermek istersek o zaman a nin href ine #id ile verelim.ayri birt data-bs-target a gerek yok -->
+  <a href="#content" class="btn btn-primary" data-bs-toggle="collapse">Submit</a>
+
+<div id="content">
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, dolores?</p>
+</div>
+
+
+
+
+<!-- accordion -->
+<!-- data-parent onemli burda.id ile ayni olmali -->
+
+<!-- kapsayici div e id veriyoruz ki bunu kullanacagiz -->
+
+<div id="accordion">
+    <div class="card mb-2">
+        <div class="card-header">
+            <a href="#bir" class="card-link" data-bs-toggle="collapse">item-1</a>
+        </div>
+
+        <!-- acilacak kisim -->
+        <!-- data-parent="en ustteki div e verdigin id ile ayni isim olmali" -->
+        <div id="bir" class="collapse" data-parent="accordion">
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat porro vero harum repudiandae fugiat illum aliquid dolorum, nisi assumenda minus ratione rem a alias hic eaque voluptate exercitationem ipsum distinctio esse repellendus. Debitis adipisci fugit inventore quae similique! Repudiandae, cumque!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-2">
+        <div class="card-header">
+            <a href="#iki" class="card-link" data-bs-toggle="collapse">item-2</a>
+        </div>
+    
+        <!-- acilacak kisim -->
+        <!-- data-parent="en ustteki div e verdigin id ile ayni isim olmali" -->
+        <div id="iki" class="collapse" data-parent="accordion">
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat porro vero harum repudiandae fugiat
+                    illum aliquid dolorum, nisi assumenda minus ratione rem a alias hic eaque voluptate exercitationem ipsum
+                    distinctio esse repellendus. Debitis adipisci fugit inventore quae similique! Repudiandae, cumque!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-2">
+        <div class="card-header">
+            <a href="#uc" class="card-link" data-bs-toggle="collapse">item-3</a>
+        </div>
+    
+        <!-- acilacak kisim -->
+        <!-- data-parent="en ustteki div e verdigin id ile ayni isim olmali" -->
+        <div id="uc" class="collapse" data-parent="accordion">
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat porro vero harum repudiandae fugiat
+                    illum aliquid dolorum, nisi assumenda minus ratione rem a alias hic eaque voluptate exercitationem ipsum
+                    distinctio esse repellendus. Debitis adipisci fugit inventore quae similique! Repudiandae, cumque!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+</p>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

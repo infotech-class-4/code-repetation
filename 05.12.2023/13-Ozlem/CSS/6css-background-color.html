@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box6{
+            width: 100%;
+           height: 300px;
+            background-color: red;
+            background-image: url("./img/background-g132500694_640.jpg");
+            /* background-size: cover; */
+            /* background-repeat: no-repeat; */
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-position: center;
+        z-index: 1;
+
+        }
+/* - absolute ile hacm(kapladigi alan) kalkar etiketin. ve inline elementler block element gibi davranir width height alir
+- relative ile hacmi kalir kendi ortadan kalkar.
+mesela bir span bir p etiketi olsun div icinde.span a absolute deyince hacmi kalkar ve p etiketi span etiketinin ustune biner.top left 0 yaparsak bu seferde div den cikar.biz bunu istemeyiz o zaman parent ina da relativ deriz */
+
+/* - position fixed: sabit kalir.navbar icin kullanilir
+- position sticky: belli bir yere gelince sabit kalsin deriz */
+
+
+/* absolute ile top left 0 ile bir divi digerinin ustune getirince z-index ile bunlari alt ust yapabiliirz.default olarak 1 dir z-index.altta kalmasini istedigimize -1 dersek ustte olmasi gerekene ister z-index 1 yaz ister yazma.*/
+        .box7{
+            width: 500px;
+            height: 300px;
+            background-color: blueviolet;
+            margin: 50px;
+            position: relative;
+         
+        }
+
+        span{
+            /* position: fixed; */
+            position: absolute;
+            top: 50px;
+            left: 80px; 
+              width: 300px;
+            height: 300px;
+            background-color: brown;
+        }
+
+        .box3{
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="box6"></div>
+<br>
+    <div class="box7">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <span>span etiketi</span>
+    </div>
+
+    <div class="box3"></div>
+</body>
+</html>

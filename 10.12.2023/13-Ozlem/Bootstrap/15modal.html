@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- bootstrap sitesinden linkini getirdik. asagiya da js kodunu getiriyoruz -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+
+
+<body class="w-75 mx-auto my-5">
+
+    <!-- modal ekrana uyari vermek icin kullanilir.butona basilinca olur bu.ve sonra bu buton ile iliskili olan kismi acalim div ile.en distakinin class i modal olacak.ictekinin modal-dialog ve sonra da en icteki div leri farkli class larda header, body ve footer olarak koyalim.ve button ile iliskilendirelim ve tiklayinca acilmasini saglayalim data-bs-toggle ile -->
+
+    <!-- tiklayinca kapanmasi icin ise yine buttona data-bs-dismiss="modal" deriz.footerun icine koyduk bu buttonu-->
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#myModal">
+        MODAL AC
+    </button>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+         
+            <div class="modal-header">
+                <h2>Selam</h2>
+            </div>
+            <div class="modal-body">Lorem, ipsum dolor.</div>
+            
+            <div class="modal-footer">Lorem ipsum dolor sit amet.
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">close</button></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

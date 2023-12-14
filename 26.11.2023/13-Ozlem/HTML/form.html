@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <!--form elementleri
+          <form>
+             input
+             select
+             textarea                            button                           datalist  
+             
+             
+*** <fieldset> tagi ile gruplandirilir ve cerceve cizer icine alinanlarin etrafina
+                                               *** <legend> tag i ile cercevenin uzerine baslik yazilabilir.align='center' dersen ortali yazar
+            
+           </form> -->
+
+    <fieldset>
+        <legend align="center">bilgiler</legend>
+
+        <form action="">
+            <span>Name:</span> <input type="text"> <br> <br>
+            <span>Nachname:</span> <input type="text"> <br><br>
+            <span>Password::</span> <input type="text"> <br><br>
+            <span>Tel:</span> <input type="tel"> <br><br>
+    </fieldset>
+
+
+    <input type="color"> <br><br>
+    <input type="time"> <br><br>
+
+    <fieldset>
+        <legend> Button</legend>
+        <input type="file"> <br><br>
+
+        <input type="submit">
+        <input type="reset">
+
+
+        <button>Speichern</button>
+    </fieldset>
+
+
+    <!-- label icine aldigimiz da yazinmin ustune tiklayinca da klick isareti yapar. label in icine almayip disari yazip inputun id si ile label in for icine ayni ismi verirsen o da olur -->
+
+    <h3>Sprache wählen</h3>
+    <label>
+        <input type="checkbox">Deutsch
+    </label>
+    <input type="checkbox">English
+    <input type="checkbox">Turkish
+
+    <!-- veya -->
+    <input type="checkbox" id="language">
+    <label for="language">ich akzeptiere</label>
+
+    <br><br>
+    <!-- input un radio type inda sadece birini isaretleyeblyr olmasi lazim.Bunun icine inputun name ine ayni ama value suna farkli degerler vermeliyiz.backend value ya gore islem yapar. bu sekilde ayni anda birden fazlasini isaretlenmez checkbox da oldugu gibi -->
+
+    <label>
+        <input type="radio" name="cinsiyet" value="erkek">erkek
+    </label>
+
+
+    <label>
+        <input type="radio" name="cinsiyet" value="kadin">kadin
+    </label>
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .list li:nth-child(3) {
+            color: red;
+        }
+
+
+        .list li:last-child {
+            color: blue;
+        }
+
+        .list li:first-child {
+            color: rgb(245, 16, 245);
+        }
+
+        /* ::selection{}   sectigimiz, uzerine gelip taradigimiz elementin rengini degistireblrz */
+
+        ::selection {
+            color: darksalmon;
+            background-color: darkseagreen;
+        }
+
+        /* input icine yazdigimiz yazinin rengini degistirmek icin */
+        input {
+            color: blue;
+            font-size: 30px;
+        }
+/* input icindeki placeholderin style ni degistirmek icin; */
+        input::placeholder {
+            color: chocolate;
+            font-size: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <ul class="list">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+        <li>list-7</li>
+        <li>list-8</li>
+    </ul>
+
+
+    <input type="text" placeholder="eintreten">
+
+
+</body>
+
+</html>

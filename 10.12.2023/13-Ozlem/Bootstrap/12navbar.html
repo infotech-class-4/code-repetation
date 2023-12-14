@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- bootstrap sitesinden linkini getirdik. asagiya da js kodunu getiriyoruz -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+        <!-- icon icin font-awesome linki -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+
+<body class="w-75 mx-auto my-5">
+
+    <!-- once bir nav tag acalim.classi navbar olan.sonra ul nin classina da navbar-nav yazarsak artik alttaki li ler normal li olma ozelligini kaybeder.eger alt alta degilde yan yana istersek navbar-expand veririz.byklerde yan yana ,kck ekranlarda yine altalta olsunlar dersek de navbar-expand-sm yazariz nav tagi classi icine. lg, xlg md de var ortaya gelsin diye de justify-content-center deriz.navbar icindeki yazilarin beyaz olmasi icinde navbar-dark classi ver.navbar koyu yazi acik diye ters etki verir bu-->
+   
+<!-- <nav class="navbar bg-light "> -->
+<!-- <nav class="navbar bg-light navbar-expand "> -->
+<nav class="navbar bg-primary navbar-dark navbar-expand-sm justify-content-center ">
+
+
+    <!-- icon eklemek icin bir a tagi acip navbar-brand classi ver ve icine icon u koy hemen ul nin ustune.linkini getir.istersen rengini de degistireblrsn inline css ile-->
+
+    <a href="" class="navbar-brand ms-3">
+<i class="fa-solid fa-house" style="color: brown;"></i>
+    </a>
+
+    <!-- a taglari saga gitsin, icon solda kalsin istersek a larin kapsayicisina ms-auto deriz.ul icine container classi vererek de butun hepsinin arasini otomatik ayirizi.cunku bootstrap de containerin boyle bir ozelligi var-->
+<ul class="navbar-nav ms-auto">
+<!-- <ul class="navbar-nav container"> -->
+    <li class="nav-item">
+        <a href="" class="nav-link">Link-1</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link">Link-2</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link">Link-3</a>
+    </li>
+</ul>
+
+
+
+</nav>
+
+
+
+<br><br>
+
+
+<!-- Logo ekleme navbara.buton ve logoyu birbiri ile etkilestirmek icin data-bg-toggle="collapse" diyoruz.bootstrap in kendi icon lari da var.mesela button icine bir span ve classina navbar-toggler-icon dersek bir hamburger getirir.data-bs-target in aciklamasi asagida -->
+<!-- fixed-top ile de yukarida hep sabit kalir navbar -->
+<nav class="navbar bg-light navbar-light navbar-expand-md fixed-top">
+
+    <a href="#" class="navbar-brand ms-3">LOGO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- simdi asagi acilacak menuyu olusturalim .div class ina collapse navbar-collapse demeliyizki alttaki menu itemlari tiklayinca acilsin. ve buton ile bu  menu div ini irtibatlandirmak icin bir id verelim div e.ve gelip bunu buttonda data-bs-target="#id adi" seklinde yazalim.boylece tiklaninca butona a lar acilacak -->
+    <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">link1</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">link2</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">link3</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sequi aperiam est exercitationem iste, dignissimos debitis, facilis ex tempora, laboriosam culpa quis veniam amet soluta consequuntur fugiat eos esse! Totam quaerat minima odit ipsum, facere corporis asperiores. Aperiam ipsum aliquid minima dolore natus doloribus fugiat quisquam at, commodi quibusdam obcaecati facilis rerum saepe nobis quaerat iste dolores incidunt temporibus veniam error nesciunt neque voluptas consequatur aliquam. Necessitatibus, fuga quod fugit nihil velit modi. Quo, quaerat, eos cupiditate iste expedita dicta ab, blanditiis minima tempore ullam voluptas officia at officiis facere corrupti repellendus eligendi ipsam ea corporis. Expedita alias nobis architecto nostrum mollitia rem earum corporis officiis, repellendus tempore culpa odio repudiandae, iusto sit suscipit modi, amet deleniti aliquid natus atque. Nulla et commodi hic beatae odit vel eius quo voluptatibus! Commodi, voluptatibus alias quam asperiores odio, ipsum consequuntur praesentium ad id nam natus enim cupiditate. Aut quis voluptatem hic earum, ad quam, delectus quibusdam inventore maiores sed ipsam aliquid voluptas sequi quidem. Veniam ducimus, praesentium voluptate distinctio impedit similique eos quas! Optio cum iure voluptates fugit soluta suscipit harum, accusantium temporibus doloremque excepturi, sit nisi nam? Consequuntur cumque sunt accusantium. Numquam obcaecati totam iste vel! Necessitatibus, eaque deleniti incidunt quis esse repudiandae numquam, nisi porro accusamus enim amet exercitationem qui atque voluptatum quasi, ducimus ipsam unde? Officia est hic laboriosam quis dolorum iure vero delectus autem repellendus sit! Cum, molestiae! Praesentium earum ab veritatis, dolor quasi dolores unde aut laboriosam mollitia in soluta error ut suscipit doloribus adipisci omnis non laudantium eum repellat sit repellendus nulla provident dolorum. Eos provident ullam harum alias voluptate reiciendis porro placeat corporis simili
+</p>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

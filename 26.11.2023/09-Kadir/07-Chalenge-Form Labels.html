@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Lucida Sans Typewriter", "Lucida Console", monaco,
+          "Bitstream Vera Sans Mono", monospace;
+      }
+
+      li {
+        padding: 1em;
+      }
+
+      .h1 {
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+
+      fieldset {
+        background: whitesmoke;
+        padding: 15px;
+        margin: 10px;
+      }
+
+      .challenge {
+        background: aliceblue;
+        margin: 40px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>HTML Demo & Challenge: Form Labels</h3>
+    <ol>
+      <li>
+        <span class="h1">Input için label olmayan bir form örneği.</span>
+        <form>
+          <fieldset>
+            Adınız:
+            <input type="text" name="adınız" />
+          </fieldset>
+        </form>
+      </li>
+
+      <li>
+        <span class="h1">İç içe label/input örneği.</span>
+        <p>Bu durumda for/id özelliği gerekli değildir.</p>
+        <form>
+          <fieldset>
+            <label
+              >Favori renk:
+              <input type="color" name="favori-renk" />
+            </label>
+          </fieldset>
+        </form>
+      </li>
+
+      <li>
+        <span class="h1">Label ile checkbox örneği</span>
+        <form>
+          <fieldset>
+            Sizinle iletişim kurma yöntemi:
+            <input type="checkbox" value="email" name="contact" id="email" />
+            <label for="email">E-posta</label>
+            <input
+              type="checkbox"
+              value="whatsapp"
+              name="contact"
+              id="whatsapp"
+            />
+            <label for="whatsapp">Whatsapp</label>
+            <input type="checkbox" value="chat" name="contact" id="chat" />
+            <label for="chat">Uygulama içi sohbet</label>
+          </fieldset>
+        </form>
+      </li>
+
+      <li>
+        <span class="h1">Farklı Adlara Sahip checkbox</span>
+        <p>
+          Her bir onay kutusu girişi için farklı adlar da kullanabilirsiniz.
+          Aynı olmak zorunda değiller. Yalnızca verilerin sunucu tarafında nasıl
+          işlenmesi gerektiğini değiştirirler.
+        </p>
+        <form>
+          <fieldset>
+            Sizinle iletişim kurma yöntemi:
+            <input type="checkbox" value="email" name="email" id="email" />
+            <label for="">E-posta</label>
+            <input
+              type="checkbox"
+              value="whatsapp"
+              name="whatsapp"
+              id="whatsapp"
+            />
+            <label for="">Whatsapp</label>
+            <input type="checkbox" value="chat" name="chat" id="chat" />
+            <label for="">Uygulama içi sohbet</label>
+          </fieldset>
+        </form>
+      </li>
+
+      <li>
+        <span class="h1">Radyo Butonları: Yalnızca Bir Buton Olabilir</span>
+        <p>
+          Radyo butonlarında bir dizi butonun adının aynı olması gerekir.
+          Paylaşılan "name" temel mantıkta bunu yapmak için kullanılır, böylece
+          birine tıklamak önceki seçimin seçimini kaldırır. id'ler her zaman
+          farklı olmalıdır.
+        </p>
+        <form>
+          <fieldset>
+            Sizinle iletişim kurma yöntemi:
+            <input type="radio" value="email" name="contact" id="email" />
+            <label for="">E-posta</label>
+            <input type="radio" value="whatsapp" name="contact" id="whatsapp" />
+            <label for="">Whatsapp</label>
+            <input type="radio" value="chat" name="contact" id="chat" />
+            <label for="">Uygulama içi sohbet</label>
+          </fieldset>
+        </form>
+      </li>
+    </ol>
+
+    <div class="challenge">
+      <p>
+        <strong>CHALLENGE:</strong> Yukarıdaki HTML'de bir hata var.Örnek 4 ve
+        5'teki iletişim yöntemlerinden herhangi biri için Label metnine
+        tıklamayı deneyin("Whatsapp" gibi).
+      </p>
+
+      <p>
+        Çalışmadığını fark etmiş olabilirsiniz. Şimdi Örnek 4 ve 5'teki etiket
+        metinlerini tıklarken Örnek 3'teki onay kutularına bakın.
+      </p>
+
+      <p>
+        Bu neden oluyor? Bu kesinlikle id'lerin bir sayfaya özgü olmasıyla
+        ilgili. Bunu nasıl düzeltirsiniz?
+      </p>
+
+      <p>
+        <b>Cevap:</b>
+        4.ve5.örnekte label for="" icine email, whatsapp ve chat yazilmis. Bu
+        durumda 4.ve5.örnekteki kutulara tiklansa da 3.örnekteki "E-posta,
+        WhatsApp ve Uygulama içi sohbet" tiklaniyor.
+      </p>
+    </div>
+  </body>
+</html>

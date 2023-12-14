@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <!-- fieldset => Adi, soyadi ve pass'i grublandirmak icin -->
+      <legend align="center">Giris</legend>
+      <!-- legend=> fieldset grubu icin içeriği için bir başlık yapar-->
+      <span>Name:</span> <input type="text" placeholder="Isminizi giriniz" />
+      <br />
+      <br />
+      <span>Nachname:</span>
+      <input type="text" placeholder="Soyisminizi giriniz" /> <br />
+      <br />
+      <span>Password:</span> <input type="password" />
+      <br> <br>
+      <span>Dogum Terihi:</span> <input type="date" name="" id="">
+    </fieldset>
+
+    <br />
+
+    <input type="number" name="" id="" />
+    <input type="color" /> <br /><br />
+    <input type="time" /> <br /><br />
+
+    <fieldset>
+      <legend align="center">Bilgiler</legend>
+      <input type="file" name="" id="" /> <br /><br />
+      <span>Telefon</span> <input type="tel" /> <br /><br />
+
+      <input type="submit" value="Gönder" />
+      <input type="reset" value="Sifirla" />
+
+      <button>Kaydet</button>
+
+      <h3>Konustugunuz dilleri seciniz:</h3>
+
+      <label> <input type="checkbox" name="" id="" /> Türkisch </label>
+      <label> <input type="checkbox" name="" id="" /> Deutsch </label>
+      <input type="checkbox" name="" id="" /> Englisch
+
+      <br /><br />
+
+      <!--Eger label'in for'u ile input'un id'si ayni olursa label disarida da yazilabilir.-->
+      <input type="checkbox" name="" id="sözlesme" />
+      <label for="sözlesme"
+        >Kullanici sözlesmesini okudum, kabul ediyorum.</label
+      >
+      <br /><br />
+
+      <!--Cinsiyet gibi tek bir secenek durumunda input'larin name'i ayni olmali-->
+      <!--radio button'da value'ye deger verilmeli-->
+      <label> <input type="radio" name="cinsiyet" value="Erkek" />Erkek </label>
+      <label> <input type="radio" name="cinsiyet" value="Kadin" />Kadin </label>
+    </fieldset>
+
+    <br />
+    <select name="iller" id="">
+      <option value="">Il seciniz</option>
+      <option value="1" disabled>Ankara</option>
+      <!-- disabled => tiklanamaz yapar-->
+      <option value="2">Istanbul</option>
+      <option value="3">Adana</option>
+      <option value="4">Izmir</option>
+      <br /><br />
+      <input type="number" value="100" />
+      <!--value'ya verilen deger ile baslar-->
+    </select>
+    <br />
+
+    <p>Yorum Yaziniz:</p>
+    <textarea
+      name="Yorum"
+      id=""
+      cols="30"
+      rows="10"
+      placeholder="Yaziniz"
+    ></textarea>
+
+    <br /><br />
+
+    <datalist id="sehirler">
+      <option value="Istanbul"></option>
+      <option value="Ankara"></option>
+      <option value="Bursa"></option>
+      <option value="Kayseri"></option>
+      <option value="Trabzon"></option>
+      <option value="Canakkale"></option>
+    </datalist>
+    <input type="text" name="" id="sehir" list="sehirler" />
+    <!--datalist'in id'si ile type'i text olan input'un list'i ayni (sehirler) olursa -->
+    <!-- uzun listelerde kullanici kolay bulabilir-->
+  </body>
+</html>

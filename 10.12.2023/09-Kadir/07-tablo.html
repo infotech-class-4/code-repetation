@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+
+    </style>
+
+  </head>
+  <body >
+
+    <h5>Basic Table</h5>
+    <!-- "table" class'i bir tabloya hafif bir padding ve yatay ayiricilar gibi temel stil ekler -->
+    <!-- "table-dark" class'i tabloya siyah bir arka plan ekler -->
+    <!-- "table-dark" ve "table-striped" ile koyu, çizgili bir tablo olusturulur -->
+    <!-- "table-bordered" class'i, tablonun ve hücrelerin her tarafına kenarlıklar ekler -->
+    <!-- "table-borderless" class'i tablodaki kenarlıklari/sınırları kaldırır -->
+    <!-- "table-hover" class'i, tablo satırlarına bir vurgulu efekti (gri arka plan rengi) ekler -->
+    <!-- table basligi (thead) icinin rengi "bg-renk" ile degistirilir -->
+    <!-- table gövdesinin (tbody) rengi ise "table-renk" ile degistirilir -->
+    <!-- "table-responsive" class'i, tablo yatay olarak çok büyük olduğunda bir kaydırma çubuğu ekler -->
+    <div class="table-responsive-lg w-75 mx-auto my-5">
+    <table class="table table-dark table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th class="bg-warning">Sira no</th>
+          <th>Isim</th>
+          <th>Soyisim</th>
+          <th>mail</th>
+          <th class="bg-primary">Sehir</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Ahmet</td>
+          <td>Demir</td>
+          <td>ahmetdemir@example.com</td>
+          <td class="table-danger">Paris</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ayse</td>
+          <td class="table-info">Demir</td>
+          <td>aysedemir@example.com</td>
+          <td>Tokyo</td>
+        </tr>
+        <tr class="table-success">
+          <td>3</td>
+          <td>Mehmet</td>
+          <td>Demir</td>
+          <td>mehmetdemir@example.com</td>
+          <td>Teksas</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .kutular {
+            display: grid;
+            /* grid-template-rows: 150px 200px ;
+            grid-template-columns: 100px 200px 300px; */
+
+            /* grid-template: 150px 200px / 100px auto 300px; */
+            grid-template: 150px 200px / 100px 1fr 3fr;
+
+            /* grid-template: 250px 200px / repeat(3 1fr); */
+/*             
+            grid-template: 250px 200px / repeat(6, minmax(10px 300px)); */
+
+            gap: 5px 5px;
+
+            grid-template-areas: 
+                    "D D D"
+                    "B E C"
+                    "B E C"
+                    "B F F"
+                    "A A A"
+                    
+                    ;
+
+
+
+
+
+
+        }
+
+        .box {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .box1 {
+            background-color: aqua;
+            grid-area: A;
+          
+        }
+        .box2 {
+            background-color: blueviolet;
+            grid-area: B;
+        }
+        .box3 {
+            background-color: brown;
+            grid-row: 1 / span 2;
+            grid-column: 3 / 4;
+            grid-area: C;
+        }
+        .box4 {
+            background-color: burlywood;
+            grid-area: D;
+        }
+        .box5 {
+            background-color: chartreuse;
+            /* order: -2; */
+            grid-area: E;
+        }
+        .box6 {
+            background-color: rgb(226, 12, 215);
+            /* order: -1; */
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2; */
+
+            grid-row: 3 / 4;
+            grid-column: 1 / 4;
+            grid-area: F;
+
+
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="kutular">
+        <div class="box box1">1.BOX</div>
+        <div class="box box2">2.BOX</div>
+        <div class="box box3">3.BOX</div>
+        <div class="box box4">4.BOX</div>
+        <div class="box box5">5.BOX</div>
+        <div class="box box6">6.BOX</div>
+       
+      </div>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      body {
+        background-color: blueviolet;
+      }
+      nav {
+        background-color: aqua;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      nav ul li {
+        padding: 10px 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      nav ul li a:hover {
+        background-color: burlywood;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+
+      nav ul li:nth-child(1) {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        nav ul {
+          height: 250px;
+          flex-direction: column;
+          background-color: red;
+          align-items: center;
+        }
+        nav ul li:nth-child(3) {
+          display: none;
+        }
+        nav ul li:nth-child(1) {
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        nav ul {
+          height: 250px;
+          flex-direction: column;
+          background-color: rgb(153, 255, 0);
+          align-items: center;
+        }
+        nav ul li:nth-child(2) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="">Anasayfa <i class="fa-solid fa-house"></i></a>
+        </li>
+        <li><a href="">Hakkımızda</a></li>
+        <li><a href="">Iletişim</a></li>
+        <li><a href="">Videolar</a></li>
+        <li><a href="">Resimler</a></li>
+        <li><a href="">Yorumlar</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

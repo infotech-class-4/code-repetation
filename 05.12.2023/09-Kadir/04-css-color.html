@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS'de renkler ayrıca RGB, HEX ve HSL değerleri kullanılarak da belirtilebilir -->
+    <!-- CSS'de hatta RGBA veya HSLA renk değerleri kullanılarak şeffaf renkler de belirlenebilir. -->
+    <!-- rgb (Red,Green,Blue) kodlarinda 0'dan256'ya kadar deger verilebilir-->
+    <!-- Tasarim icin https://147colors.com/ sitesinden yararlanilabilir-->
+    <!-- Baska font-family icin https://fonts.google.com/ sitesinden yararlanilabilir -->
+
+    <style>
+      h3 {
+        /* color: red; */
+        /* color: rgb(100, 149, 237) ; */
+        /* color: RGBA(100, 149, 237, 0.5) ; */
+        color: hsl(232, 100%, 64%);
+        /* color: #f80a0a; */
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        /* font-family: "Germania One"; */
+      }
+
+      /* font-size ile yazilar degistirilebilir, large, larger, medium, small, smaller... */
+      /* font-style ile italic, oblique, inherit, initial ve unset yapilabilir */
+      p {
+        font-size: large;
+        font-style: italic;
+      }
+
+      /* Kenarlık(border) genişliğini (15px), stilini(solid) ve rengini(gold) ayarlamak için border kullanilir. */
+      /*  border-bottom-style ile alt kenarlığın stilini ayarlanir. dotted=noktali vb. */
+      div {
+        height: 300px;
+        width: 300px;
+        background-color: aqua;
+        border: 15px solid gold;
+        border-bottom-style: dotted;
+        border-top-style: double;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>h3 etiketi</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div>div etiketi</div>
+  </body>
+</html>

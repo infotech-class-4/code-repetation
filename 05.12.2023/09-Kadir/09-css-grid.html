@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+    <style>
+
+        /* display: grid yazıldığında bir "grid konteynir" olusturulur. */
+        /* satırlar(row) ve sütunlar(column) içeren ızgara(grid) tabanlı bir düzen sistemi sunarak, websitelerin tasarlanmasını kolaylaştırır. */
+        /* row: yatay satir */
+        /* column: sütun, kolon, dikey satir */
+        /* grid-template: grid sütunlarını, satırlarını ve alanlarını tek bir bildirimde ayarlamak için kullanilir. */
+        /* sayfanin tamamini kaplamasi durumunda "fr" yani birim deger verilebilir */
+        /* gap: Her sütun/satır(column/row) arasındaki boşluklara "gap" adı verilir. */
+        /* grid-row-gap ve grid-column-gap ile satir ve sütun aralarina bosluk verilebilir */
+        /* yada grid-gap ile de bosluk verilebilir */
+        /* grid-area: ile alanlar adlandirilir ve grid-template-areas: ile yerlestirme yapilir */
+        .grid-container{
+            display: grid;
+            /* grid-template-rows: 150px 200px; */
+            /* grid-template-columns: 100px 200px 300px; */
+            /* grid-template: 150px 200px / 100px auto 300px; */
+            grid-template: 150px 200px / 100px 3fr 1fr;
+            /* grid-template: 150px 200px / 2fr 3fr 1fr; */
+            /* grid-template: 250px 220px / repeat(3 200px); */
+            /* grid-template: 250px 220px / repeat(3 1fr); */
+            /* grid-template: 250px 220px / repeat(3, minmax(100px, 300px)); */
+            /* grid-row-gap: 5px;
+            grid-column-gap: 5px; */
+            grid-gap: 5px 10px;
+            grid-template-areas: "D D D"
+                                 "B E C"
+                                 "B E C"
+                                 "B F ."
+                                 "A A A";
+        }
+
+        .box{
+            text-align: center;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        /* order: Aynı konteynir içindeki öğelerin sırasını belirtir. */
+        /* order websayfasinda havadurumu gibi öne cikarilmak istenen konteylarda kullanilir */
+        /* order: 0'dan negatif yönde uzaklastikca öne cikiyor */
+        .box1{
+            background-color: aqua;
+            /* order: 1; */
+            /* grid-row: 2 / 3 ;
+            grid-column: 2 / 3 ; */
+            grid-area: A;
+        }
+        .box2{
+            background-color: blueviolet;
+            grid-area: B;
+        }
+        .box3{
+            background-color:brown;
+            /* grid-row: 1 / 3 ; */
+            grid-row: 1 / span 2 ;
+            grid-column: 3 / 4 ;
+            grid-area: C;
+        }
+        .box4{
+            background-color: burlywood;
+            grid-area: D;
+        }
+        .box5{
+            background-color: chartreuse;
+            grid-area: E;
+        }
+        /* grid-row-start, grid-column-end..: grid yerleşimine bir çizgi(line), bir aralık(span) veya 
+        hiçbir şey (nothing) (otomatik) eklenerek bir grid item'in boyutu ve konumu belirlenir. */
+        /* grid-row ve grid-column kullanilarak hücreler birlestirilebilir */
+        .box6{
+            background-color: rgb(226, 12, 215);
+            /* order: -1; */
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2; */
+            /* yada sadece grid-row ve grid-column kullanilabilir */
+            /* grid-row: 1 / 2 ;
+            grid-column: 1 / 3 ; */
+            /* grid-row: 3 / 4 ; */
+            /* grid-column: 1 / 4 ; */
+            /* grid-column: 1 / span 3 ; */
+            grid-area: F;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="box box1">1.BOX</div>
+        <div class="box box2">2.BOX</div>
+        <div class="box box3">3.BOX</div>
+        <div class="box box4">4.BOX</div>
+        <div class="box box5">5.BOX</div>
+        <div class="box box6">6.BOX</div>
+    </div>
+    
+</body>
+</html>

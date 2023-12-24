@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css hover</title>
+
+    <style>
+      /* mouse üzerine geldiginde degisiklik icin hover kullanilir */
+      a:hover {
+        background-color: aqua;
+        font-size: 20px;
+        color: brown;
+      }
+
+      /* border-radius => köseleri oval yapar */
+      /* opacity => Bir öğenin metninin opaklığı; 1 opak ve 0 ise tamamen şeffaftır. */
+      button:hover {
+        background-color: blue;
+        border-radius: 8px;
+        opacity: 0.6;
+      }
+
+      /* display:none ile button'u görünmez yaptik */
+      button {
+        display: none;
+      }
+
+      /* input type'i checkbox olan tiklandiginda button'in secili display özelligini blokla*/
+      /* input[type="checkbox"]:checked + button{
+            display: block;
+        } */
+      input[type="checkbox"]:checked + #box5 {
+        display: block;
+      }
+
+      /* span'a blok olarak yükseklik vermek istersek block 'a cevirmeliyiz  */
+      span {
+        display: inline-block;
+        height: 50px;
+        background-color: red;
+        padding: 10px;
+      }
+      /* padding=> Dolgu alanının kalınlığına ilişkin değerleri ayarlamaya yönelik kısayol özelliği. */
+      /* margin=> Kenar boşluğu alanının kalınlığına ilişkin değerleri ayarlamaya yönelik kısayol özelliği. */
+    </style>
+  </head>
+  <body>
+    <a href="#">google</a>
+
+    <input type="checkbox" name="" id="" />Kullanici sözlesmesini okudum,
+    onayliyorum.
+
+    <button id="box5">Gönder</button>
+
+    <!-- div block element -->
+    <div>div etiketi</div>
+    <!-- span inline element -->
+    <span>span etiketi</span>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font-size-em-rem</title>
+
+    <style>
+      /* 16px, 1em ve 2rem default olarak birbirine esit.*/
+      /* em; bir üst parent'i etkiler */
+      /* rem; default olan 16px'i etkiler */
+      .box {
+        font-size: 10px;
+      }
+      p {
+        font-size: 2rem;
+      }
+
+      /* text-decoration => Bir öğenin metni için kullanılan yazı tipine uygulanan süslemelerdir. */
+      /* text-decoration'a none verilirse alt cizgi yok edilir*/
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+
+    <a href="#">google</a>
+  </body>
+</html>

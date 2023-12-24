@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      div{
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- btn class'lari <a>, <button> ve <input> element'lerinde kullanilabilir -->
+    <h5>Button Styles</h5>
+    <button class="btn">Basic</button>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-dark">Dark</button>
+    <button class="btn btn-light">Light</button>
+    <button class="btn btn-link">Link</button>
+    <br><br>
+
+    <h5>Button Elements</h5>
+    <a href="#" class="btn btn-primary">Google</a>
+    <a href="#" class="btn btn-secondary">Google</a>
+    <a href="#" class="btn btn-success">Google</a>
+    <a href="#" class="btn btn-danger">Google</a>
+    <a href="#" class="btn btn-warning">Google</a>
+    <br><br>
+    <input type="button" class="btn btn-info" value="Input Button">
+    <input type="submit" class="btn btn-info" value="Submit Button">
+    <input type="reset" class="btn btn-info" value="Reset Button">
+    <br><br>
+    <a href="#" class="btn btn-info">Google</a>
+    <a href="#" class="btn btn-light">Google</a>
+    <a href="#" class="btn btn-dark">Google</a>
+    <br><br>
+    
+    <h5>Button Outline</h5>
+    <!-- "hover" efekti için mausu üzerlerine getirin -->
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-light text-dark">Light</button>
+    <br><br>
+
+    <h5>Button Sizes</h5>
+    <!-- Büyük button icin "".btn-lg" kücük button ".btn-sm" icin kullanilir -->
+    <button type="button" class="btn btn-primary btn-lg">Large</button>
+    <button type="button" class="btn btn-primary">Default</button>
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+    <br><br>
+
+    <h5>Modal-Fullscreen - Tam Ekran</h5>
+    <!-- modal-fullscreen kullanilir -->
+    <button class="btn btn-primary modal-fullscreen">Modal-Fullscreen</button>
+    <br><br>
+
+    <h5>Block Level Buttons</h5>
+    <!-- blok düzeyinde bir button oluşturmak için parent elementte "".d-grid" "helper" class'i kullanilir -->
+    <div class="d-grid">
+      <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+    </div>
+
+    <h5>Disabled Button</h5>
+    <!-- Soluk renkli bir button icin "disabled" kullanilir-->
+    <button class="btn btn-primary disabled">Disabled Button</button>
+    <br><br>
+
+    <h5>Button Groups</h5>
+    <!-- Bir dizi button'i birlikte (tek bir satırda) gruplandırır -->
+    <!-- Bunun icin "<div>" elementi icinde "btn-group" class'i kullanilir -->
+    <!-- Daha büyük grup icin btn-group-lg, daha kücük grup icin btn-group-sm kullanilir -->
+    <div class="btn-group">
+      <button class="btn btn-primary">Apple</button>
+      <button class="btn btn-danger">Samsung</button>
+      <button class="btn btn-success">Sony</button>
+      <button class="btn btn-dark">Vestel</button>
+    </div>
+    <br><br>
+
+    <!-- buuton grubunu dikey hizalamak icin "btn-group-vertical" kullanilir -->
+    <div class="btn-group-vertical">
+      <button class="btn btn-primary">Apple</button>
+      <button class="btn btn-danger">Samsung</button>
+      <button class="btn btn-success">Sony</button>
+      <button class="btn btn-dark">Vestel</button>
+    </div><br><br>
+    <!-- button grupları "inline"dir; birden fazla grub olduğunda bunların yan yana görünmesini sağlar -->
+    <!-- pe=>padding-end,  ps=>padding-start, m=> margin-->
+
+    <div class="btn-toolbar">
+      <div class="btn-group pe-3 me-3">
+        <a href="#" class="btn btn-primary">1</a>
+        <a href="#" class="btn btn-primary">2</a>
+        <a href="#" class="btn btn-primary">3</a>
+        <a href="#" class="btn btn-primary">4</a>
+        <a href="#" class="btn btn-primary">5</a>
+      </div>
+      <div class="btn-group">
+        <a href="#" class="btn btn-primary">6</a>
+        <a href="#" class="btn btn-primary">7</a>
+        <a href="#" class="btn btn-primary">8</a>
+        <a href="#" class="btn btn-primary">9</a>
+        <a href="#" class="btn btn-primary">10</a>
+      </div>
+    </div> <br><br>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+</html>

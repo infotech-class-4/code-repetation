@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <a href="/index.html">turn back</a> <br> <br>
+    
+<form>
+
+    <fieldset> <legend align="center">LOGIN</legend>
+    <span>name</span> <input type="text" placeholder="enter your name"> <br><br>
+    <span>surname</span> <input type="text" placeholder="enter your surname"> <br> <br>
+    <span>password</span> <input type="passwort" placeholder="enter your password"> <br> <br>
+    </fieldset> <br>
+
+     <fieldset> <legend align="center">INFORMATIONS</legend>
+     <span>phone number</span> <input type="tel" placeholder="enter your phone number"> <br><br>
+    
+     <span>date of birth</span> <input type="date"> <br> <br>
+
+    <label for="">
+       <input name='sex' type="radio"> man
+       </label>
+   
+       <label for="">
+        <input name='sex' type="radio"> woman
+       </label>
+   
+       <label for="">
+       <input name='sex' type="radio"> other
+       </label>
+       <br><br>
+
+    <spam>select languages you can speak</spam>
+
+    <label>
+        <input type="checkbox"> english
+    </label>
+    <label>
+        <input type="checkbox"> german
+    </label> <br> <br>
+    
+     <span>time</span> <input type="time"> <br> <br>
+
+     <span>upload your file</span> <input type="file"> <br> <br>
+
+     <select name="cities" id="">
+        <option value="">select the city</option>
+        <option value="1">Istanbul</option>
+        <option value="2">California</option>
+        <option value="3">Moscow</option>
+        <option value="4">Milan</option>
+        <option value="5">Berlin</option>
+     </select> <br> <br>
+
+     <datalist id='cities'>
+        <option>İstanbul</option>
+        <option>California</option>
+        <option>Moscow</option>
+        <option>Milan</option>
+        <option>Berlin</option>
+     </datalist>
+     <input id="cities" type="text" list="cities" placeholder="select the city">
+     </fieldset>
+     
+    <p>somethig you want to share:</p>
+    <textarea name="" id="" cols="30" rows="5"></textarea> <br> <br>
+
+     <button>submit</button>
+     <button>clean</button>
+
+    </form>
+</body>
+</html>
